@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f6f0e6">
+  <title>Wemimi spreadsheet | Sneakers, kleding en QC-foto’s</title>
+  <meta name="description" content="Gebruik de Wemimi spreadsheet als winkelgids. Bekijk sneakers, kleding en accessoires en vergelijk maten, QC-foto’s en verzendkosten.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Wemimi spreadsheet | Sneakers, kleding en QC-foto’s">
+  <meta property="og:description" content="Kies een categorie en controleer maat, productfoto’s en verzendkosten voordat je bestelt.">
+  <style>
+    :root { color-scheme: light; --paper:#f6f0e6; --ink:#29213b; --accent:#963f2e; --card:#fffaf2; --line:#ded0bf; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.65 system-ui,sans-serif; }
+    main, footer { width:min(72rem, calc(100% - 2rem)); margin-inline:auto; }
+    h1, h2, h3, p, figure { margin:0; }
+    h1, h2 { font-family:Georgia,serif; line-height:1.08; }
+    h1 { font-size:clamp(2.6rem, 7vw, 5.6rem); letter-spacing:-.055em; overflow-wrap:anywhere; }
+    h2 { font-size:clamp(1.7rem, 4vw, 2.6rem); }
+    h3 { line-height:1.3; }
+    p, ol { max-width:66ch; }
+    p + p { margin-top:.7rem; }
+    a { color:inherit; text-underline-offset:.2em; }
+    :focus-visible { outline:3px solid #714db1; outline-offset:4px; }
+    .intro { padding:clamp(1.5rem, 5vw, 4.5rem) 0 1.75rem; }
+    .intro p { margin-top:.85rem; }
+    .categories { padding:1.15rem; border:1px solid var(--line); background:var(--card); border-radius:1rem; }
+    .categories h2 { font-size:1.6rem; }
+    .categories ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 11rem),1fr)); gap:.45rem; list-style:none; padding:0; margin:1rem 0 0; }
+    .categories a { display:block; padding:.55rem .65rem; border-bottom:1px solid var(--line); font-weight:650; }
+    .categories a:hover { background:#f0e4d6; }
+    .hero { display:grid; grid-template-columns:1fr 1fr; margin-top:1.5rem; border-radius:1rem; overflow:hidden; background:#eadced; }
+    .hero-copy { align-self:center; padding:clamp(1.25rem, 4vw, 3rem); }
+    .hero p, article p { margin-top:.65rem; }
+    .button { display:inline-block; margin-top:1rem; padding:.65rem 1rem; background:var(--accent); color:#fff; border-radius:.5rem; font-weight:700; }
+    .button:hover { background:#753021; }
+    img { display:block; width:100%; height:auto; }
+    .hero img, .gallery img { aspect-ratio:1; object-fit:contain; background:#fff; }
+    section { margin-top:2.6rem; }
+    .gallery, .guides { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 14rem),1fr)); gap:.85rem; margin-top:1rem; }
+    .gallery figure, article { border:1px solid var(--line); border-radius:.8rem; background:var(--card); overflow:hidden; }
+    figcaption, article { padding:1rem; }
+    .note { margin-top:.65rem; }
+    details { border-bottom:1px solid var(--line); padding:.75rem 0; }
+    summary { cursor:pointer; font-weight:700; }
+    details p { margin:.4rem 0 0 1rem; }
+    footer { margin-top:2.5rem; border-top:1px solid var(--line); padding:1.2rem 0 2rem; }
+    @media (max-width:42rem) { .hero { grid-template-columns:1fr; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "nl",
+    "name": "Wemimi spreadsheet | Sneakers, kleding en QC-foto’s",
+    "description": "Gebruik de Wemimi spreadsheet als winkelgids. Bekijk sneakers, kleding en accessoires en vergelijk maten, QC-foto’s en verzendkosten.",
+    "mainEntity": [
+      {"@type":"Question","name":"Wat is een Wemimi spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Een Wemimi spreadsheet is een overzicht waarmee je producten per categorie kunt vinden en vergelijken. Deze gids verwijst voor het aanbod naar HipoBuyFind."}},
+      {"@type":"Question","name":"Welke QC-foto’s zijn nuttig voor sneakers?","acceptedAnswer":{"@type":"Answer","text":"Vraag naar foto’s van beide schoenen, de buitenzolen en het maatlabel. Vergelijk de uitvoering met de gekozen productvariant."}},
+      {"@type":"Question","name":"Hoe vergelijk ik verzendkosten naar Nederland of België?","acceptedAnswer":{"@type":"Answer","text":"Kies eerst het land van bestemming. Vergelijk dan de route, het verpakte gewicht, de afmetingen en de kosten die bij het afrekenen worden getoond."}},
+      {"@type":"Question","name":"Hoe controleer ik of een merkartikel echt is?","acceptedAnswer":{"@type":"Answer","text":"QC-foto’s laten de staat en afwerking zien. Vraag voor de herkomst om aankoopbewijs en controleer of de verkoper een erkend verkooppunt is."}}
+    ]
+  }
+  </script>
+  <!--
+    Zoekonderzoek: de rechtstreekse Google-resultatenpagina was onbereikbaar.
+    De exacte volgorde en de eerste tien Google-resultaten zijn daardoor niet bevestigd.
+    Geraadpleegde zoekresultaten en inhoudsthema’s:
+    wemimi.net — categorieën, productlinks, kwaliteitscontrole
+    wemimi.shop — productkaarten, schoenen, kleding, FAQ
+    wemimisheets.com — QC-foto’s, maattabellen, bestelproces
+    wemimispreadsheet.shop — varianten, vergelijkingen, pakketkosten
+    wemimisheet.com — maatlabels, printdetails, afwerking
+    spreadfinds.com/wemimi — productlinks en verkopersinformatie (zoekfragment)
+    wemimispreadsheet.com — marktplaatslinks, QC-foto’s, verzendvragen
+    wemimifinds.com/wemimi-finds — productcategorieën en catalogus
+    puroclassico.com/guides/how-we-check — productlinks controleren
+    weidian.news — productoverzicht, prijzen en verkopersinformatie
+
+    Secundaire zoektermen: Wemimi finds, Wemimi productlinks, Wemimi QC-foto’s,
+    Wemimi maatgids, Wemimi verzendkosten.
+
+    Longtail: Wemimi spreadsheet voor sneakers; Wemimi spreadsheet voor kleding;
+    Wemimi spreadsheet met accessoires; Wemimi productlinks per categorie;
+    sneakers vergelijken op binnenzoollengte; QC-foto’s van sneakers beoordelen;
+    maatlabel van sneakers controleren; zoolprofiel van sneakers vergelijken;
+    maattabel voor hoodies lezen; borstbreedte van een hoodie meten;
+    T-shirt vergelijken op schouderbreedte; print op een T-shirt controleren;
+    jas vergelijken op mouwlengte; taille van een broek plat meten;
+    cap kiezen op hoofdomtrek; pasvorm van een sportshirt vergelijken;
+    materiaal van sieraden controleren; sluiting van een ketting bekijken;
+    afmetingen van een armband controleren; productvariant op een QC-foto herkennen;
+    verzendkosten naar Nederland vergelijken; verzendkosten naar België vergelijken;
+    pakketgewicht met schoenendoos vergelijken; totale kosten voor bestelling berekenen.
+  -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/ovuue/">
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <h1>Wemimi spreadsheet</h1>
+      <p>Een Wemimi spreadsheet helpt je sneakers, kleding en accessoires per categorie te vinden. Gebruik deze onafhankelijke gids om Wemimi finds te vergelijken op maat, uitvoering en totale kosten. De productcategorieën openen bij HipoBuyFind.</p>
+    </header>
+
+    <nav class="categories" aria-labelledby="categorieen">
+      <h2 id="categorieen">Kies een categorie</h2>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Schoenen</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies en truien</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jassen</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Broeken en shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Petten en mutsen</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Kledingsets</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ondergoed</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Sportshirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoires</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <h2>Zo vergelijk je sneakers</h2>
+        <p>Meet de binnenzool van een paar dat goed zit. Vergelijk die lengte in centimeters met de maattabel van het model dat je overweegt. Controleer op de foto’s ook het maatlabel, de kleur en het zoolprofiel.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Open de HipoBuyFind-catalogus</a>
+      </div>
+      <figure>
+        <img src="https://cms-cdn.thesolesupplier.co.uk/2017/10/Nike-Air-Max-1-OG-Red_w672_h672_pad_.png.webp" width="672" height="672" fetchpriority="high" alt="Zijaanzicht van een wit-grijze Nike Air Max 1 met rode accenten">
+      </figure>
+    </div>
+
+    <section aria-labelledby="details-merken">
+      <h2 id="details-merken">Waar let je op bij kleding en accessoires?</h2>
+      <p class="note">De merkfoto’s dienen als stijlvoorbeelden. Bekijk de catalogus voor het actuele aanbod.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Vooraanzicht van een Louis Vuitton-monogramjas van denim">
+          <figcaption><strong>Louis Vuitton</strong> · Vergelijk schouderbreedte en mouwlengte met een jas die goed zit.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Gucci-baseballpet van beige GG-canvas">
+          <figcaption><strong>Gucci</strong> · Meet je hoofdomtrek en bekijk de verstelbare sluiting.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.jackroad.co.jp/img/goods/2/cd167-1.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Goudkleurige Dior Petit CD-ketting">
+          <figcaption><strong>Dior</strong> · Bekijk het materiaal, de kettinglengte en de sluiting.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png" width="480" height="480" loading="lazy" decoding="async" alt="Oranje Hermès Clic H-armband met goudkleurige H-sluiting">
+          <figcaption><strong>Hermès</strong> · Vergelijk je polsomtrek met de binnenmaat van de armband.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="koopgidsen">
+      <h2 id="koopgidsen">Koopgidsen</h2>
+      <div class="guides">
+        <article>
+          <h3>Maattabel voor kleding lezen</h3>
+          <p>Leg een goed passende hoodie plat en meet van oksel tot oksel. Kijk of de maattabel de platte borstbreedte of de volledige borstomtrek vermeldt. Controleer bij broeken op dezelfde manier de taille en meet ook de binnenbeenlengte. Vergelijk bij sportshirts de ruglengte als je het shirt ingestopt wilt dragen.</p>
+        </article>
+        <article>
+          <h3>Productlinks en QC-foto’s controleren</h3>
+          <p>Open de productlink en controleer of de gewenste maat en kleur nog selecteerbaar zijn. Vraag bij twijfel om een detailfoto van het maatlabel, de naden of de plaatsing van een print. QC staat voor kwaliteitscontrole. Noteer bij elke foto welke variant erop staat voordat je je opties vergelijkt.</p>
+        </article>
+        <article>
+          <h3>Verzendkosten naar Nederland en België</h3>
+          <p>Tel de artikelprijs, eventuele binnenlandse bezorgkosten en servicekosten op bij de internationale verzending. Controleer welke belastingen en afhandelingskosten in het getoonde totaal zitten. Vraag bij schoenen zo nodig om pakketmaten met en zonder schoenendoos om te zien of die het tarief beïnvloeden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Veelgestelde vragen</h2>
+      <details open>
+        <summary>Wat is een Wemimi spreadsheet?</summary>
+        <p>Een Wemimi spreadsheet is een overzicht waarmee je producten per categorie kunt vinden en vergelijken. Deze gids verwijst voor het aanbod naar HipoBuyFind.</p>
+      </details>
+      <details>
+        <summary>Welke QC-foto’s zijn nuttig voor sneakers?</summary>
+        <p>Vraag naar foto’s van beide schoenen, de buitenzolen en het maatlabel. Vergelijk de uitvoering met de gekozen productvariant.</p>
+      </details>
+      <details>
+        <summary>Hoe vergelijk ik verzendkosten naar Nederland of België?</summary>
+        <p>Kies eerst het land van bestemming. Vergelijk dan de route, het verpakte gewicht, de afmetingen en de kosten die bij het afrekenen worden getoond.</p>
+      </details>
+      <details>
+        <summary>Hoe controleer ik of een merkartikel echt is?</summary>
+        <p>QC-foto’s laten de staat en afwerking zien. Vraag voor de herkomst om aankoopbewijs en controleer of de verkoper een erkend verkooppunt is.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.hipobuyfind.com">Naar HipoBuyFind</a>
+  </footer>
+</body>
+</html>
